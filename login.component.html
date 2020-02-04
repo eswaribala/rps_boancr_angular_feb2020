@@ -1,0 +1,41 @@
+<form class="form" (submit)="login($event)" #userForm="ngForm">
+  <fieldset>
+  <legend>Customer Login</legend>
+  <mat-form-field>
+  <mat-placeholder>
+    <mat-icon>
+      perm_identity
+    </mat-icon>
+    User Name
+  </mat-placeholder>
+    <!--#userName="ngModel" must for validation -->
+    <input type="text" matInput required [(ngModel)]="user.userName" name="userName" #userName="ngModel"/>
+    <div [hidden]="userName.valid || userName.pristine" class="alert alert-danger">
+      Name is required
+    </div>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-placeholder>
+      <mat-icon>
+       visibility_off
+      </mat-icon>
+     Password
+    </mat-placeholder>
+    <input type="password" matInput required [(ngModel)]="user.password"  name="password" #password="ngModel"/>
+    <div [hidden]="password.valid || password.pristine" class="alert alert-danger">
+      Password is required
+    </div>
+
+  </mat-form-field>
+  <button mat-fab type="submit" color="primary"  [disabled]="!userForm.form.valid">
+    <mat-icon>
+      lock_open
+    </mat-icon>
+  </button>
+    <button mat-fab type="reset" color="warn"  (click)="newUser(); userForm.reset()">
+      <mat-icon>
+        restore_page
+      </mat-icon>
+    </button>
+  </fieldset>
+</form>
