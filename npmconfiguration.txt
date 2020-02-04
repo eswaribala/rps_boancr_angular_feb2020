@@ -1,0 +1,10 @@
+npm config set strict-ssl=false
+npm config set proxy http://username:password@proxyname:port
+npm config set https-proxy http://username:password@proxyname:port
+npm config set registry http://registry.npmjs.org/
+Or
+Npm config edit
+proxy = http://username:password@proxyname:port
+https-proxy = http://username:password@proxyname:port
+Registry= http://registry.npmjs.org/
+
