@@ -1,6 +1,6 @@
 .mat-header-row
 {
-  background-color: darkblue;
+  background-color: goldenrod;
 
 
 }
@@ -8,7 +8,7 @@
 {
   color:white;
   font-weight: bold;
-
+  font-size: large;
   margin-left: 1%;
 }
 
@@ -16,24 +16,27 @@
 {
   width:60%;
   margin-top: 2%;
-  margin-left: 20%;
+
   font-size: large;
   font-weight: bold;
 
 }
 
 .mat-cell{
-  color:mediumblue;
+  color:goldenrod;
+
   font-weight: bold;
   margin-right: 6%;
-
+  font-size: large;
 }
+
 
 .mat-paginator
 {
   margin-right: 30%;
-  color:mediumblue;
+  color:goldenrod;
   font-weight: bold;
+  font-size: large;
 }
 
 
