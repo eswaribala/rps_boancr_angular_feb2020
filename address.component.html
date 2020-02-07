@@ -1,0 +1,20 @@
+<section class="address">
+<article class="input">
+<h1>Multicasting observbles using Rxjs Subjects</h1>
+<mat-form-field>
+  <mat-placeholder>
+    <mat-icon>
+      people
+    </mat-icon>
+    Name
+  </mat-placeholder>
+  <input type="text"  matInput [(ngModel)]="name" />
+
+
+</mat-form-field>
+<button id="btnClick" color="accent" mat-raised-button (click)="passInputData()">Send</button>
+</article>
+<article class="output">
+  <app-cheque></app-cheque>
+</article>
+</section>
